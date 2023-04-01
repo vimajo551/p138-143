@@ -27,11 +27,12 @@ font-size: 22px;
     text-align: left;
     font-size: 20px;
 }
-h4
+.copy_right_footer
 {
    background-color: grey;
    color:white;
    line-height: 2;
+   margin: 0;
 }
 canvas 
   {
