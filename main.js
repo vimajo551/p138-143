@@ -15,6 +15,8 @@ score2 = 0;
 playerscore = 0;
 pcscore = 0;
 
+gameStatus = "";
+
 function setup(){
     canvas =  createCanvas(700,550);
     canvas.parent('canvas');
@@ -33,6 +35,11 @@ function modelLoaded(){
     
 function gotPoses(results){
 
+}
+
+function startGame(){
+  gameStatus = "start";
+  document.getElementById("status").innerHTML = "Game Is Loaded";
 }
 
 function draw(){
@@ -69,13 +76,13 @@ function draw(){
         stroke("#FFA500");
         var paddle2y =ball.y-paddle2Height/2;  rect(paddle2Y,paddle2y,paddle2,paddle2Height,100);
 
-        midline();
+        //midline();
 
-        drawScore();
+        //drawScore();
 
-        models();
+        //models();   
 
-        move();
+        //move();     
     
         }
     
